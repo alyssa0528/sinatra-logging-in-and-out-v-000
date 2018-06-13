@@ -1,4 +1,6 @@
-class Helpers::User
+require 'sinatra/base'
+
+class Helpers
 
   def User.current_user(session)
     binding.pry
