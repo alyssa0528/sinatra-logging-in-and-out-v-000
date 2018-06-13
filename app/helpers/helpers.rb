@@ -8,6 +8,6 @@ class Helpers
   end
 
   def self.is_logged_in?(session)
-
+    
   end
 end
