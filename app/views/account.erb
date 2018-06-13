@@ -6,8 +6,12 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">
   </head>
   <body id="page-top">
-    <p>Hello <%= @user.username %>!</p>
-    <p>Your current balance is <%= @user.balance %>.</p>
+    <% if self.is_logged_in? %>
+      <p>Hello <%= @user.username %>!</p>
+      <p>Your current balance is <%= @user.balance %>.</p>
+    <% else %>
+      <a href="/">Homepage</a>
+    <% end %>  
     <a href="/logout">Log Out</a>
   </body>
 </html>
