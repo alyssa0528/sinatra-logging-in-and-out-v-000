@@ -10,7 +10,7 @@
       <p>Welcome <%= Helpers.current_user(session).username %></p>
       <p>Your current balance is <%= Helpers.current_user(session).balance %>.</p>
     <% else %>
-      <a href="/">Homepage</a>
+      <p>You Must <a href="/"Log In></a> to View Your Balance</p>
     <% end %>
     <a href="/logout">Log Out</a>
   </body>
